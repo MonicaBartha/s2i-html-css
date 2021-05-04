@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front-end dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css//style.css" />
+  <script src="https://kit.fontawesome.com/17d8c48e30.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/assets/Monica-Bartha-Resume-2021.pdf" target="_blank"
+                rel="noopener noreferrer">Resume</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 px-3">
+          <h1>front-end dev</h1>
+          <p>
+            I am Monica Bartha, front-end/React developer. I am open for new challenges, so you I invite you to see my
+            project and contact me.
+          </p>
+          <a class="custom-btn px-5 py-3">My Works</a>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <img src="../assets/monica.jpg" class="avatarImg" alt="woman" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-1" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="about">
+              <figure>
+                <img src="../assets/globant.jpg" alt="woman working at pc" />
+                <figcaption>
+                  <h3>Mentoring Program</h3>
+                  <span>During Laboratoria's Bootcamp we benefit of mentorship offered by Globant.</span>
+                </figcaption>
+              </figure>
+              <figure>
+                <img class="news-img" src="../assets/laboratoria.jpg" alt="woman working at pc" />
+                <figcaption>
+                  <h3>TV Apparition</h3>
+                  <span>We appeared on the news in the context of the lack of programmer women</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="about-text">
+              <h6>Monica Bartha</h6>
+              <h2>About me</h2>
+              <p class="pt-4">
+                I am Front-end developer based in Italy, always concerned about how to improve myself and as a
+                professional, to acquire new skills. Unafraid to leave the comfort zone and adapting to changes.
+              </p>
+              <p>I am a team work lover and continous learner.</p>
+              <h3>Technologies I worked with</h3>
+              <p>A few technologies I've been working with recently:</p>
+              <div class="technologies">
+                <div class="col-md-6">
+                  <p>REACT JS</p>
+                  <p>NEXT JS</p>
+                  <p>TYPESCRIPT</p>
+                  <p>JAVASCRIPT</p>
+                  <p>TAILWIND</p>
+                  <p>MATERIAL UI</p>
+                </div>
+                <div class="col-md-6">
+                  <p>STYLED COMPONENTS</p>
+                  <p>STORYBOOK</p>
+                  <p>SAAS</p>
+                  <p>CSS3</p>
+                  <p>FIGMA</p>
+                  <p>GIT</p>
+                </div>
+              </div>
+              <p> My current time zone: CEST / UTC+1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2 container-fluid px-5" id="projects">
+      <div class="section-2-title text-center">
+        <h6>Personal and bootcamp projects</h6>
+        <h2>Projects</h2>
+        <p>My projects are created during Start2impact course, Laboratoria's bootcamp and Udemy courses. There are
+          front-end and also full-stack projects.</p>
+      </div>
+      <div class="cards w-100 d-flex flex-row flex-wrap justify-content-around pb-5 clearfix">
+        <!--First Card-->
+        <div class="col-lg-3 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/mdlinks-mockup.jpg" class="d-block w-100" alt="..." />
+              <div class="title mt-3 px-3">
+                <h5 class="card-title">
+                  Task Mate
+                </h5>
+              </div>
+              <p class="card-text py-2 px-3">
+                This projects is a simple CRUD, a full-stack project made with Next.js, Typescript, GraphQL, Apollo
+                Server, MySQL, CSS.
+              </p>
+              <div class="buttons px-3">
+                <a href="https://github.com/MonicaBartha/taskapp-next-ts" class="btn btn-dark px-5 py-2 mb-5">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Start-->
+        <div class="col-lg-3 col-sm-12 mb-3">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- First item -->
+                <div class="card">
+                  <div class="card-body">
+                    <img src="../assets/cocktail-recipes.jpg" class="d-block w-100" alt="..." />
+                    <div class="title">
+                      <h5 class="card-title mt-3 px-3">
+                        Cocktail recipes
+                      </h5>
+                    </div>
+                    <p class="card-text py-2 px-3">
+                      This app is created for practice API calls Technologies: React.js, hooks, CSS with Bootstrap
+                      and
+                      Material UI and
+                      TheCocktailDb API.
+                    </p>
+                    <div class="buttons">
+                      <a href="https://github.com/MonicaBartha/cocktail-recipes"
+                        class="btn btn-dark px-5 py-2 mb-5">Code</a>
+                      <a href="https://cocktail-recipes-app.netlify.app/" class="btn btn-dark px-5 py-2 mb-5">Deploy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Second item -->
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="../assets/patient-appointment-manager.jpg" class="d-block w-100" alt="..." />
+                    <div class="title">
+                      <h5 class="card-title mt-3 px-3">
+                        Patients manager
+                      </h5>
+                    </div>
+                    <p class="card-text py-2 px-3">
+                      This project is an appointment manager for veterinary clinic. Is created with React JS, hooks,
+                      Normalize and Skeleton.
+                    </p>
+                    <div class="buttons">
+                      <a href="https://github.com/MonicaBartha/administrador-de-pacientes"
+                        class="btn btn-dark px-5 py-2 mb-5">Code</a>
+                      <a href="https://pacientes-veterinarios.netlify.app/"
+                        class="btn btn-dark px-5 py-2 mb-5">Deploy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third item -->
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="../assets/tasks-manager.jpg" class="d-block w-100" alt="..." />
+                    <div class="title">
+                      <h5 class="card-title mt-3 px-3">
+                        Project and task Manager
+                      </h5>
+                    </div>
+                    <p class="card-text py-2 px-3">
+                      This is a MERN project, a full-stack project created with: React JS, Express, Node,
+                      MongoDB, JSON WebToken, CSS3
+                    </p>
+                    <div class="buttons">
+                      <a href="https://github.com/MonicaBartha/task-app" class="btn btn-dark px-5 py-2 mb-5">Code</a>
+                      <a href="https://projects-and-tasks.netlify.app/" class="btn btn-dark px-5 py-2 mb-5">Deploy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel ends -->
+        <!--Third Card-->
+        <div class="col-lg-3 col-sm-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../assets/moov-project.jpg" class="d-block w-100" alt="..." />
+              <div class="title mt-3 px-3">
+                <h5 class="card-title">
+                  Moov app
+                </h5>
+              </div>
+              <p class="card-text py-2 px-3">
+                This app helps people with reduced mobility to find inclusive tourist attractions from Chile. Is
+                created with React JS, Here Maps API, CSS.
+              </p>
+              <div class="buttons">
+                <a href="https://github.com/MonicaBartha/moov" class="btn btn-dark px-5 py-2 mb-5">Code</a>
+                <a href="https://moov-8e44e.web.app/" class="btn btn-dark px-5 py-2 mb-5">Deploy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="connect text-center py-5" id="contact">
+      <h2>Let's Connect</h2>
+      <p>
+        Find me on social media or write me to my e-mail address: <a
+          href="mailto:barthamonica@gmail.com">barthamonica@gmail.com</a>
+      </p>
+      <div class="social-icons">
+        <i class="fab fa-twitter"><a href="https://twitter.com/MonicaBartha"></a></i>
+        <i class="fab fa-linkedin-in"><a href="https://www.linkedin.com/in/monica-bartha/"></a></i>
+        <i class="fab fa-github"><a href="https://github.com/MonicaBartha"></a></i>
+      </div>
+    </section>
+    <div class="backToTopDiv">
+      <button id="backToTopBtn" class="backToTopBtn btn btn-dark px-3 py-2" title="Go to top"
+        onclick="topFunction()">&#8593;</button>
+    </div>
+  </main>
+  <footer class="text-center pt-5">
+    <div class="row">
+      <h4>
+        Front-end is everything designed to be used and viewed by the user, is all you can interact with.
+      </h4>
+    </div>
+    <div class="row">
+      <p>2021 Monica Bartha. All Right reseved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

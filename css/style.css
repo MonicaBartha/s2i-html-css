@@ -1,0 +1,400 @@
+/* variables */
+:root {
+  --Ubuntu: "Ubuntu", sans-serif;
+  --Overpass: "Overpass Mono", monospace;
+  --bg-dark: #151515;
+  --black: #0c0c0c;
+  --pink: #fd4766;
+  --blue: #337dff;
+  --grey: #757575;
+  --color-body: #1d1d24;
+  --light-grey: #ced0d4;
+  --white: #ffffff;
+  --gradient: linear-gradient(
+    90deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+}
+::-moz-selection {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+::selection {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--bg-dark);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--pink);
+}
+
+h1 {
+  font-family: var(--Ubuntu);
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--light-grey);
+}
+
+h2 {
+  font-family: var(--Ubuntu);
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h6 {
+  color: var(--pink);
+  font-family: var(--Overpass);
+}
+
+p {
+  color: var(--grey);
+  font-family: var(--Ubuntu);
+}
+
+/* HEADER */
+
+header,
+section {
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+header,
+.col-md-7,
+.col-md-5,
+p {
+  background-color: var(--black);
+}
+
+header nav ul li a {
+  color: var(--pink);
+  font-family: var(--Ubuntu);
+  line-height: 0.5em;
+  margin: -10px;
+}
+
+header button {
+  margin-bottom: 10px;
+}
+
+header button i {
+  color: var(--pink);
+}
+
+header button i:hover {
+  color: var(--blue);
+}
+
+header .nav-item:last-child {
+  margin-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 0.9em;
+}
+
+header .nav-link:hover {
+  color: var(--blue);
+}
+
+header .col-md-7 {
+  padding: 22vmin 0 12vmin 0;
+}
+
+header .col-md-5 img {
+  width: 400px;
+  margin-top: 40px;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 15vmin 3vmin 0;
+}
+
+header .container .col-md-7 .custom-btn {
+  border: 2px solid var(--pink);
+  background: transparent;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.avatarImg {
+  -webkit-filter: drop-shadow(10px 7px 1px var(--pink));
+}
+
+.avatarImg:hover {
+  -webkit-filter: drop-shadow(10px 7px 1px var(--blue));
+}
+
+/* About section */
+.section-1 {
+  padding: 10vmin 0;
+}
+
+.section-1 .row .col-md-6 p {
+  background-color: var(--bg-dark);
+}
+
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.about figure {
+  margin: 0;
+  position: relative;
+}
+
+.about figure img {
+  width: 400px;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.about figcaption {
+  width: 400px;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  text-align: center;
+  padding: 60px;
+  background: var(--blue);
+  backface-visibility: hidden;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.about figure:hover figcaption {
+  opacity: 1;
+  transform: translate(15px, 15px);
+}
+
+.about figcaption h3,
+span {
+  background: none;
+  color: var(--black);
+}
+
+.news-img {
+  margin-top: 40px;
+}
+
+.about-text {
+  padding: 0 30vmin 0 15vmin;
+}
+
+.about-text p {
+  background-color: var(--bg-dark);
+}
+
+.about-text > p:nth-of-type(3) {
+  color: var(--pink);
+  font-family: var(--Overpass);
+}
+
+.about-text > p:last-of-type {
+  color: var(--white);
+}
+
+.about-text h2 {
+  background-color: var(--bg-dark);
+}
+
+.about-text h6 {
+  background-color: var(--bg-dark);
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Projects section */
+
+.section-2 {
+  box-sizing: border-box;
+  background-color: var(--black);
+}
+
+.section-2-title {
+  padding: 10vmin 30vmin 5vmin 30vmin;
+  background-color: var(--black);
+}
+
+.section-2-title h2 {
+  background-color: var(--black);
+}
+
+.section-2-title h6 {
+  background-color: var(--black);
+}
+
+.cards a {
+  color: var(--pink);
+  margin-right: 10px;
+}
+.cards a:hover {
+  color: var(--blue);
+  box-shadow: 1px 1px var(--blue), 2px 2px var(--blue), 3px 3px var(--blue);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+.cards {
+  background-color: var(--black);
+  z-index: 10;
+}
+
+.card {
+  border: 1px solid var(--pink);
+  background-color: var(--bg-dark);
+}
+
+.card-body {
+  background-color: var(--bg-dark);
+}
+
+.card p {
+  background-color: var(--bg-dark);
+}
+
+.carousel-indicators .active {
+  background-color: var(--pink);
+}
+
+.carousel-indicators .active:hover {
+  background-color: var(--blue);
+}
+
+/* Let's connect */
+.connect p,
+h2 {
+  background-color: var(--bg-dark);
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: var(--pink);
+  margin-right: 10px;
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out;
+}
+
+.social-icons i:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+/* Footer */
+footer p {
+  background-color: var(--bg-dark);
+}
+
+/* Back to top button */
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--pink);
+}
+
+/* RESPONSIVE */
+@media screen and (max-device-width: 1280px) {
+  .section-2-title {
+    padding: 0 10vmin 5vmin 10vmin;
+  }
+}
+@media screen and (min-device-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-device-width: 992px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .custom-btn {
+    padding: 10px 10px;
+  }
+
+  header .col-md-7 {
+    padding: 5vmin 0;
+  }
+
+  header .container .col-md-7 p {
+    padding-bottom: 5vmin;
+  }
+
+  header .col-md-5 img {
+    width: 50%;
+  }
+
+  .section-1 {
+    padding: 10vmin 2vmin;
+  }
+
+  main .col-md-8 {
+    padding: 5vmin 0 0 0;
+    margin-top: 30px;
+  }
+
+  .about figure img {
+    width: 350px;
+  }
+
+  .about-text {
+    padding: 0 5vmin;
+  }
+
+  .section-2 .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-2-title {
+    padding: 10vmin 1vmin 5vmin 1vmin;
+  }
+
+  main .backToTopDiv #backToTopBtn {
+    right: 15px;
+    font-size: 12px;
+  }
+}
