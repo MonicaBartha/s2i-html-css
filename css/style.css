@@ -303,10 +303,10 @@ h2 {
   font-size: 30px;
   color: var(--pink);
   margin-right: 10px;
-  -webkit-transition: color 2s ease-out;
-  -moz-transition: color 2s ease-out;
-  -o-transition: color 2s ease-out;
-  transition: color 2s ease-out;
+  -webkit-transition: color 1s ease-out;
+  -moz-transition: color 1s ease-out;
+  -o-transition: color 1s ease-out;
+  transition: color 1s ease-out;
 }
 
 .social-icons i:hover {
